@@ -403,3 +403,9 @@ vnoremap <C-c> y:e ~/.vim/cliptmp<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
 "     autocmd FileType python AutoFormatBuffer yapf
 "     " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 " augroup END
+"
+call glaive#Install()
+
+" Configure helloworld using glaive.
+
+Glaive codefmt clang_format_style="{BasedOnStyle: google, IndentWidth: 4, AccessModifierOffset: -4}"
